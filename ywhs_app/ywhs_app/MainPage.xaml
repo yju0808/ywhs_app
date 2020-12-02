@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:ywhs_app="clr-namespace:ywhs_app"
+            x:Class="ywhs_app.MainPage"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    android:TabbedPage.ToolbarPlacement="Bottom"
+            x:Name="main">
+
+
+
+    <ywhs_app:Home Title="홈" IconImageSource="home.png"></ywhs_app:Home>
+    <ywhs_app:word Title="영단어 테스트" IconImageSource="word.png"></ywhs_app:word>
+    <ywhs_app:settings Title="설정" IconImageSource="settings.png"></ywhs_app:settings>
+    
+</TabbedPage>

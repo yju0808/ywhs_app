@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ywhs_app.settings"
+             Padding="20">
+    
+    
+    <StackLayout Spacing="20">
+        <StackLayout Orientation="Horizontal" Margin="0,0,0,10" HeightRequest="50">
+            <Label VerticalTextAlignment="Center" Text="설정" FontAttributes="Bold" FontSize="Title" VerticalOptions="CenterAndExpand">
+            </Label>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Image Source="version.png" WidthRequest="20"/>
+            <Label Text="버전" FontSize="Large" FontAttributes="Bold"></Label>
+            <Label Text="1.0" FontSize="Medium" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand"></Label>
+        </StackLayout>
+
+        <BoxView Color="LightGray"
+                         HeightRequest="0.5"
+                         HorizontalOptions="Fill"/>
+
+        <StackLayout Orientation="Horizontal">
+            <Image Source="feedback.png" WidthRequest="20"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="피드백 하기" FontSize="Large" FontAttributes="Bold">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://docs.google.com/forms/d/e/1FAIpQLSenLIkCtpiQoHF430aE8d7SACkaUtEiIlJs3RPaCQbbIYTdJA/viewform?usp=sf_link" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                        <Span />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+
+        <BoxView Color="LightGray"
+                         HeightRequest="0.5"
+                         HorizontalOptions="Fill"/>
+
+        <StackLayout Orientation="Horizontal">
+            <Image Source="developer.png" WidthRequest="20"/>
+            <Label Text="개발자 정보" FontSize="Large" FontAttributes="Bold"></Label>
+        </StackLayout>
+
+        <StackLayout Margin="10,0,0,0">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="person.png" WidthRequest="15"/>
+                <Label Text="임정욱" FontSize="Medium" ></Label>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Image Source="mail.png" WidthRequest="15"/>
+                <Label Text="yju0808@naver.com" FontSize="Medium" ></Label>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Image Source="github.png" WidthRequest="15"/>
+                <Label Text="github.com/yju0808" FontSize="Medium"></Label>
+            </StackLayout>
+        </StackLayout>
+
+        
+
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ywhs_app.Home"
+             Padding="20"
+             x:Name="top">
+
+    <ScrollView>
+        <StackLayout Spacing="20" x:Name="main">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="ywhs.png" WidthRequest="50" HeightRequest="50"/>
+                <Label VerticalTextAlignment="Center" Text="영월고등학교" FontAttributes="Bold" FontSize="Title">
+                </Label>
+            </StackLayout>
+    
+            <Label x:Name="date" Text="날짜를 불러오는 중입니다" VerticalOptions="Center" ></Label>
+
+
+            <BoxView Color="LightGray"
+                         HeightRequest="0.5"
+                         HorizontalOptions="Fill"/>
+
+
+            <Frame 
+            CornerRadius="10"
+            Padding="20">
+
+                <StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Padding="0,0,0,20">
+                        <Image Source="schedule.png" WidthRequest="25"/>
+                        <Label Text="오늘의 학사일정"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Padding="5,0,0,0"/>
+                    </StackLayout>
+
+                    <Label x:Name="schedule" FontSize="Large" Text="일정을 불러오는 중입니다"/>
+
+
+
+                </StackLayout>
+            </Frame>
+
+
+            <Frame 
+            CornerRadius="10"
+            Padding="20">
+
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" Padding="0,0,0,20">
+                        <Image Source="meal" WidthRequest="25"/>
+                        <Label Text="오늘의 급식"
+                        FontSize="Large"
+                        FontAttributes="Bold" 
+                        Padding="5,0,0,0"/>
+                    </StackLayout >
+
+                    <StackLayout x:Name="viewMealData" >
+                        <Label FontSize="Large" FontAttributes="Bold" Text="조식"></Label>
+                        <Label x:Name="breakfast" FontSize="Large" Text="급식을 불러오는 중입니다"/>
+                    
+                        <BoxView Color="LightGray"
+                             HeightRequest="0.5"
+                             HorizontalOptions="Fill"
+                             Margin="0,10,0,10"/>
+
+
+                        <Label FontSize="Large" FontAttributes="Bold" Text="중식"></Label>
+                        <Label x:Name="lunch" FontSize="Large" Text="급식을 불러오는 중입니다"/>
+                    
+                        <BoxView Color="LightGray"
+                             HeightRequest="0.5"
+                             HorizontalOptions="Fill" 
+                             Margin="0,10,0,10"/>
+
+                        <Label FontSize="Large" FontAttributes="Bold" Text="석식"></Label>
+                        <Label x:Name="dinner" FontSize="Large" Text="급식을 불러오는 중입니다"/>
+                    </StackLayout>
+
+                    <Label x:Name="noneMeal" IsVisible="false" FontSize="Large" Text="급식이 없습니다"/>
+
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
