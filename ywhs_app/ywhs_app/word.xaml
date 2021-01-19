@@ -11,6 +11,6 @@
         </StackLayout>
 
 
-        <WebView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Source="https://ywhs-english.com/english_quiz_page/index.html" />
+        <WebView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Source="https://ywhs-english.com/ywhs_app_eng_quiz/"/>
     </StackLayout>
 </ContentPage>
